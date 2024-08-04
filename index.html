@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geet's Library</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="icon" href="LOGO1.jpg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO1.jpg" alt="My E-commerce Library">
+            <h2>GEET's Library</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Books</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our Library</h2>
+        <p>Find out the best books here.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Books</h2>
+        <div class="products-grid">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81yxRLBMmkL._SL1500_.jpg" alt="Life's amazing secrets">
+                <h3>Life's amazing secrets</h3>
+                <p>$20.00</p>
+                <button onclick="addToCart('Lifes amazing secrets', 20)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41OeeytRUEL._SY445_SX342_.jpg" alt="The art of happiness">
+                <h3>The art of happiness</h3>
+                <p>$50.00</p>
+                <button onclick="addToCart('The art of happiness', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41RwQlo446L._SY445_SX342_.jpg" alt="Energize your mind">
+                <h3>Energize your mind</h3>
+                <p>$60.00</p>
+                <button onclick="addToCart('Energize your mind', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51YtN+fUoqL._SY445_SX342_.jpg" alt="Karma">
+                <h3>Karma</h3>
+                <p>$100.00</p>
+                <button onclick="addToCart('Karma', 100)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51MB4Tc-cFL._SL1082_.jpg" alt="The book of life">
+                <h3>The book of life</h3>
+                <p>$25.00</p>
+                <button onclick="addToCart('The book of life', 25)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/41ACElFKjiL._SY445_SX342_.jpg" alt="Do it today">
+                <h3>Do it today</h3>
+                <p>$40.00</p>
+                <button onclick="addToCart('Do it today', 40)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are an online library store providing the best life changing books at the best prices.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GEET's Library. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
